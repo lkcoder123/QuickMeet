@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    {{>header}}
+
+    <div class="content">
+        <div class="search-section">
+            <div class="search">
+                <input type="text" class="search-field" placeholder="search your friends by email....">
+                <button class="btn">Search</button>
+            </div>
+            {{!-- <div class="refresh">
+                <button class="refresh-btn"><i class="fa fa-refresh"
+                        style="font-size:25px; color:#3bce7f;"></i></button>
+                <div class="loader"></div>
+            </div> --}}
+            <div class="friends-section">
+                {{!-- <div class="friend" id="first">
+                    <img src="./img/profile.jpg" alt="">
+                    <div class="detail-section">
+                        <div class="data-section">
+                            <span class="friend-name">Lal Krishna</span>
+                        </div>
+                        <div class="feature-section">
+                            <a href="#" class="chat-btn" data-_id="5f63b51410e5935b7c0db4b1">Chat</a>
+                            <a href="#" class="profile-btn" data-_id="5f63b51410e5935b7c0db4b1">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend" id="first">
+                    <img src="./img/profile.jpg" alt="">
+                    <div class="detail-section">
+                        <div class="data-section">
+                            <span class="friend-name">Lal Krishna</span>
+                        </div>
+                        <div class="feature-section">
+                            <a href="#" class="chat-btn" data-_id="5f63b51410e5935b7c0db4b1">Chat</a>
+                            <a href="#" class="profile-btn" data-_id="5f63b51410e5935b7c0db4b1">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend" id="first">
+                    <img src="./img/profile.jpg" alt="">
+                    <div class="detail-section">
+                        <div class="data-section">
+                            <span class="friend-name">Lal Krishna</span>
+                        </div>
+                        <div class="feature-section">
+                            <a href="#" class="chat-btn" data-_id="5f63b51410e5935b7c0db4b1">Chat</a>
+                            <a href="#" class="profile-btn" data-_id="5f63b51410e5935b7c0db4b1">Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend" id="first">
+                    <img src="./img/profile.jpg" alt="">
+                    <div class="detail-section">
+                        <div class="data-section">
+                            <span class="friend-name">Lal Krishna</span>
+                        </div>
+                        <div class="feature-section">
+                            <a href="#" class="chat-btn" data-_id="5f63b51410e5935b7c0db4b1">Chat</a>
+                            <a href="#" class="profile-btn" data-_id="5f63b51410e5935b7c0db4b1">Profile</a>
+                        </div>
+                    </div>
+                </div> --}}
+
+            </div>
+        </div>
+        <div class="chat-section">
+            {{!-- <div class="chat-header">
+                <img src="${chatSpace.image_url}" onerror=this.src="img/user.png" alt="">
+                <div class="user-data">
+                    <span class="friend-name">Lal</span>
+                    <span class="online-seen">Online</span>
+                </div>
+
+            </div>
+            <div class="chat-main">
+                <div class="msg-container your-msg">
+                    <div class="msg-data">
+                        <span class="sender">Lal Krishna</span>
+                        <span class="time">19 : 20 </span>
+                    </div>
+                    <div class="msg">
+                        Hey there
+                    </div>
+                </div>
+                <div class="msg-container friend-msg">
+                    <div class="msg-data">
+                        <span class="sender">Aman</span>
+                        <span class="time">19 : 20 </span>
+                    </div>
+                    <div class="msg">
+                        Hey there Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, rerum!
+                    </div>
+                </div>
+
+            </div>
+            <div class="chat-form">
+                <input type="text" placeholder="type your message......">
+                <button><img src="./img/send.png" class="abc" alt=""></button>
+            </div> --}}
+            {{!-- <img src="/img/chatStatic.png" id="test" alt=""> --}}
+            <div class="init">
+                <img src="/img/chat3.svg" class="init-img" draggable="false" class="test" alt="">
+                {{!-- <div class="welcome">
+                    <p class="first">Welcome to QuickMeet</p>
+                    <p class="second">Search your friend and get in </p>
+                    <p class="third">touch with them</p>
+                </div> --}}
+            </div>
+
+
+        </div>
+        <div class="profile-section">
+
+            {{!-- <div class="image-section">
+                <img src="./img/profile.jpg" alt="Avatar">
+            </div>
+
+            <div class="detail-section">
+                <h4><b>John Doe</b></h4>
+                <p>I'm always cool</p>
+            </div>
+            <div class="contact-section">
+                <a href="#"><img src="./img/facebook.png" alt=""></a>
+                <a href="#"><img src="./img/twitter.png" alt=""></a>
+                <a href="#"><img src="./img/linkedin.png" alt=""></a>
+                <a href="#"><img src="./img/instagram-sketched.png" alt=""></a>
+            </div>
+            <button class="btn btn-profile">
+                View Profile
+            </button> --}}
+        </div>
+    </div>
+
+    {{!-- <script type="text/javascript">
+        document.querySelector('.login').text = "Log Out";
+        document.querySelector('.signup').text = "profile";
+        document.querySelector('.signup').href = "https://www.youtube.com/";
+    </script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    {{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script> --}}
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="module" src="/js/chat.js"></script>
+    <script type="module" src="/js/controllers/index.js"></script>
+</body>
+
+</html>

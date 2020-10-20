@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/loginStyle.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+    {{!-- <div class="alert alert-success">
+        <strong>Success!</strong> Indicates a successful or positive action.
+    </div> --}}
+    {{>header}}
+    <div class="container">
+        <img src="/img/login.svg" alt="">
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            <strong>Error!</strong>Check your credentials and <strong>try again.</strong>
+        </div>
+        <div class="form-container">
+            <form>
+                <span id="message"></span>
+
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <span id="email-error" class="error"></span>
+                </div>
+
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <span id="password-error" class="error"></span>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+
+                    <a href="#">Forgot Password</a>
+                </div>
+
+                <button class="btn">Log In</button>
+
+                <small>Don't have an account? <a href="/signup/">Sign up</a></small>
+            </form>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>
