@@ -20,7 +20,7 @@ router.get("/users/contacts", auth, async (req, res) => {
         const data = {
             online: true
         };
-        await req.user.markOnline(data);
+        // await req.user.markOnline(data);
         const id = req.user._id;
         const contactList = await Contact.findOne({ owner: id });
         // console.log(contactList);
@@ -43,7 +43,7 @@ router.post("/users/contacts", auth, async (req, res) => {
         const data = {
             online: true
         };
-        await req.user.markOnline(data);
+        // await req.user.markOnline(data);
         const contactList = await Contact.findOne({ owner: req.user._id });
         contactList.contact = contactList.contact.concat({ user_id: req.body._id });
         await contactList.save();
@@ -58,7 +58,7 @@ router.get("/users/:id/online", auth, async (req, res) => {
         const data = {
             online: true
         };
-        await req.user.markOnline(data);
+        // await req.user.markOnline(data);
         const user = await User.findOne({ _id: req.params.id });
         return res.status(200).send({
             online: user.online,
@@ -74,7 +74,7 @@ router.post("/users/online", auth, async (req, res) => {
     try {
         console.log(req.body);
         console.log("abc");
-        await req.user.markOnline(req.body);
+        // await req.user.markOnline(req.body);
         res.status(200).send();
     } catch (e) {
         res.status(400).send();
@@ -88,15 +88,18 @@ router.get("/users/profile", (req, res) => {
 router.get("/isuser/", async (req, res) => {
     try {
         const id = req.query._id;
-        const user = await User.findOne({ _id: id });
+        // const user = await User.findOne({ _id: id });
 
-        if (user) {
-            return res.send({
-                validUser: true
-            })
-        }
+        // if (user) {
+        //     return res.send({
+        //         validUser: true
+        //     })
+        // }
+        // res.send({
+        //     validUser: false
+        // })
         res.send({
-            validUser: false
+            validUser: true
         })
     } catch (e) {
         console.log(e);

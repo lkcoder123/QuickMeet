@@ -60,11 +60,11 @@ io.on("connection", (socket) => {
     socket.on("disconnect", async () => {
 
         console.log("disconnected");
-        const user = await User.findOne({ _id: socket.user_id });
-        const data = {
-            online: false
-        };
-        await user.markOnline(data);
+        // const user = await User.findOne({ _id: socket.user_id });
+        // const data = {
+        //     online: false
+        // };
+        // await user.markOnline(data);
     })
 })
 

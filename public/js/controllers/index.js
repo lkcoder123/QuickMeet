@@ -213,12 +213,11 @@ window.addEventListener('DOMContentLoaded', async (event) => {
     const data = {
         online: true
     }
-    await axios.post("/users/online/", {
+    await axios.post("/users/online/", data, {
         headers: {
             Authorization: `Bearer ${localStorage.token}`
         }
-    },
-        data
+    }
     );
     // utility.setBasicCookies();
     utility.renderHeader();
